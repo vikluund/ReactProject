@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "first": "Hello",
+    "second": "GoodBye",
+    "img": "/media/Lion.png",
+    "imgalt": "A Lion"
+  },
+  {
+    "id": 2,
+    "first": "Hello",
+    "second": "GoodBye",
+    "img": "/media/PngWOMAN.png",
+    "imgalt": "A Lion"
+  },
+  {
+    "id": 3,
+    "first": "Hello",
+    "second": "GoodBye",
+    "img": "/media/Statue.png",
+    "imgalt": "A Lion"
+  }
+]
