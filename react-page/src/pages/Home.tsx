@@ -7,7 +7,6 @@ function Home() {
     <div>
       <Hero/>
       <Items />
-      <p>Hello</p>
     </div>
   )
 }

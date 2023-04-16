@@ -1,10 +1,15 @@
 import React from 'react'
+import MoneyMaker from '../components/Increaser';
+import Coin from '../components/Coin';
 
-function About() {
+function About(): JSX.Element {
+
+  const moneyValue = { incrementBy: 1};
+
   return (
-    <div>
-      <h1>Hello</h1>
-    </div>
+    <MoneyMaker.Provider value={moneyValue}>
+      <Coin buttonCoinSrc="/media/Coin.png"/>
+    </MoneyMaker.Provider>
   )
 }
 
