@@ -43,7 +43,7 @@ function Items() {
 
   return (
     <div>
-      <Button onClick={renderItems}>Press for Content</Button>
+      <Button onClick={renderItems}>Check Out My Work</Button>
       {showItems && (
         <div>
           <Button onClick={resetItems}>Reset Items</Button>
@@ -123,13 +123,13 @@ const CardGroup = styled.div`
 const Card = styled.div`
   width: 18rem;
   margin: 16px;
-  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); */
 `;
 
 const CardImage = styled.img`
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  height: 40vh;
+  object-fit: contain;
 `;
 
 const CardBody = styled.div`

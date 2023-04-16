@@ -10,11 +10,9 @@ import styled from "styled-components";
 function App() {
   return (
     <div className="App">
-      <nav className="navbar navbar-expand-lg bg-light">
+      <Nav className="navbar navbar-expand-lg">
         <div className="container-fluid">
-          <Link to="/" className="navbar-brand">
-            Navbar
-          </Link>
+          <NavBrand to="/"></NavBrand>
           <button
             className="navbar-toggler"
             type="button"
@@ -27,15 +25,17 @@ function App() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div className="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div className="navbar-nav">
-              <Link to="/" className="nav-link active" aria-current="page">
+            <NavMenu className="navbar-nav">
+              <NavItem to="/" className="nav-link" aria-current="page">
                 Home
-              </Link>
-              <Link to="/about">About</Link>
-            </div>
+              </NavItem>
+              <NavItem to="/about" className="nav-link">
+                About
+              </NavItem>
+            </NavMenu>
           </div>
         </div>
-      </nav>
+      </Nav>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
@@ -45,3 +45,45 @@ function App() {
 }
 
 export default App;
+
+const Nav = styled.nav`
+  background-color: #fff;
+  height: 8vh;
+  width: 100%;
+  padding: 1rem;
+`;
+
+const NavBrand = styled(Link)`
+  display: block;
+  width: 150px;
+  height: 50px;
+  background-image: url("/media/nav.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: background-image 0.3s ease-in-out;
+  &:hover {
+    background-image: url("/media/navhover.png");
+  }
+`;
+
+const NavMenu = styled.div`
+  display: flex;
+  align-items: center;
+`;
+
+const NavItem = styled(Link)`
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  margin-right: 2vw;
+  color: #d53a5b;
+  font-size: 1.5rem;
+  font-weight: 500;
+  &:hover {
+    color: #57bcca;
+    text-decoration: none;
+  }
+  &.active {
+    font-weight: bold;
+    color: #0d6efd;
+  }
+`;

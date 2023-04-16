@@ -1,5 +1,5 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from "react";
+import styled from "styled-components";
 
 function Hero() {
   return (
@@ -7,25 +7,25 @@ function Hero() {
       <Wrap>
         <HeroText>
           <h1>Welcome</h1>
-          <h2>To My React</h2>
+          <h2>To a Portfolio</h2>
         </HeroText>
       </Wrap>
     </div>
-  )
+  );
 }
 
-export default Hero
+export default Hero;
 
 const Wrap = styled.div`
-background: url('/media/big-data-g8e3476a48_1920.jpg');
-height: 100vh;
-display: flex;
-background-position: center;
-background-size: cover;
-position: relative;
+  background: url("/media/big-data-g8e3476a48_1920.jpg");
+  height: 100vh;
+  display: flex;
+  background-position: center;
+  background-size: cover;
+  position: relative;
 
-::before {
-    content: '';
+  ::before {
+    content: "";
     position: absolute;
     width: 100%;
     height: 100%;
@@ -34,7 +34,7 @@ position: relative;
     background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
   }
-`
+`;
 
 const HeroText = styled.div`
   display: flex;
@@ -47,12 +47,11 @@ const HeroText = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
 
-
   h1 {
-  font-size: 12vh;
-  margin-bottom: 0;
+    font-size: 12vh;
+    margin-bottom: 0;
   }
   h2 {
-  font-size: 6vh;
+    font-size: 6vh;
   }
-`
+`;

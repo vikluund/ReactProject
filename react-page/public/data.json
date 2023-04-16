@@ -1,23 +1,23 @@
 [
   {
     "id": 1,
-    "first": "Hello",
-    "second": "GoodBye",
-    "img": "/media/Lion.png",
+    "first": "My First Project",
+    "second": "Done with HTML, CSS and JS",
+    "img": "/media/html-fixed.png",
     "imgalt": "A Lion"
   },
   {
     "id": 2,
-    "first": "Hello",
-    "second": "GoodBye",
-    "img": "/media/PngWOMAN.png",
+    "first": "My Second Project",
+    "second": "Done with VUE",
+    "img": "/media/vue-fixed.png",
     "imgalt": "A Lion"
   },
   {
     "id": 3,
-    "first": "Hello",
-    "second": "GoodBye",
-    "img": "/media/Statue.png",
+    "first": "My Third Project",
+    "second": "Done with React",
+    "img": "/media/React-fixed.png",
     "imgalt": "A Lion"
   }
 ]
