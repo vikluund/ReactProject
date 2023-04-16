@@ -40,6 +40,9 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      <Footer>
+        <h4>Made by me and myself © 2023</h4>
+      </Footer>
     </div>
   );
 }
@@ -86,4 +89,15 @@ const NavItem = styled(Link)`
     font-weight: bold;
     color: #0d6efd;
   }
+`;
+
+const Footer = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  background-color: white;
+  height: 10vh;
+  width: 100%;
+  color: #d53a5b;
 `;

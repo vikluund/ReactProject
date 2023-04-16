@@ -74,7 +74,7 @@ const buttonColor = "#D53A5B";
 const Button = styled.button`
   position: relative;
   padding: 16px 30px;
-  margin-top: 5vh;
+  margin-top: 10vh;
   margin-bottom: 3vh;
   font-size: 1.5rem;
   color: ${buttonColor};
@@ -84,7 +84,7 @@ const Button = styled.button`
   text-decoration: none;
   text-transform: uppercase;
   letter-spacing: 0.1rem;
-  transition: 0.3s;
+  transition: 0.2s;
   z-index: 1;
 
   &:hover {
@@ -108,7 +108,7 @@ const Button = styled.button`
 
   &:hover::before {
     transform: scale(1);
-    transition-delay: 0.3s;
+    transition-delay: 0.2s;
     box-shadow: 0 0 10px ${buttonColor}, 0 0 30px ${buttonColor},
       0 0 60px ${buttonColor};
   }
